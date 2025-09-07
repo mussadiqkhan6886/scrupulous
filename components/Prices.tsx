@@ -21,13 +21,13 @@ export default function PricingSlider() {
         <SwiperSlide>
           <div className="p-3 px-5">
             <div className="mb-3">
-                <h2 className="text-4xl font-bold">Essential</h2>
+                <h2 aria-label="essential plan" className="text-4xl font-bold">Essential</h2>
                 <p className="text-contact text-base">Basic Plan</p>
             </div>
             <div className="mb-7">
                 <div className="flex items-end">
                     <span className="text-end text-lg text-contact">PKR</span>
-                    <h2 className="text-4xl font-bold mx-1">5999</h2>
+                    <h2 aria-label="essential price 5999" className="text-4xl font-bold mx-1">5999</h2>
                 </div>
                 <p className="mt-2 text-[17px]">For startups taking their first step online.</p>
             </div>
@@ -49,13 +49,13 @@ export default function PricingSlider() {
         <SwiperSlide>
           <div className="p-3 px-5">
             <div className="mb-3">
-                <h2 className="text-4xl font-bold">Professional</h2>
+                <h2 aria-label="professional planning price" className="text-4xl font-bold">Professional</h2>
                 <p className="text-contact text-base">Business Plan</p>
             </div>
             <div className="mb-5">
                 <div className="flex items-end">
                     <span className="text-end text-lg text-contact">PKR</span>
-                    <h2 className="text-4xl font-bold mx-1">29999</h2>
+                    <h2 aria-label="professional price 29999" className="text-4xl font-bold mx-1">29999</h2>
                 </div>
                 <p className="mt-2 text-[17px]">For growing companies needing a stronger digital presence.</p>
             </div>
@@ -78,13 +78,13 @@ export default function PricingSlider() {
      <SwiperSlide>
           <div className="p-0 px-5">
             <div className="mb-2">
-                <h2 className="text-4xl font-bold">Premium</h2>
+                <h2 aria-label="premium pricing plan" className="text-4xl font-bold">Premium</h2>
                 <p className="text-contact text-base">Enterprise Plan</p>
             </div>
             <div className="mb-3">
                 <div className="flex items-end">
                     <span className="text-end text-lg text-contact">PKR</span>
-                    <h2 className="text-4xl font-bold mx-1">79999</h2>
+                    <h2 aria-label="premium planning price 79999" className="text-4xl font-bold mx-1">79999</h2>
                 </div>
                 <p className="mt-2 text-[17px]">For established businesses seeking a fully custom solution.</p>
             </div>

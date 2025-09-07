@@ -11,7 +11,11 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: "Scrupulous",
-  description: "Scrupulous is freelancing agency giving service of we development",
+  applicationName: "scrupulous freelancing",
+  description: "Scrupulous is freelancing agency giving service of web development and graphics designing",
+  authors: [{name: "Mussadiq khan", url: "https://mussadiqkhan.vercel.app"}],
+  keywords: ["Web development", "freelancing", "graphics designing", "startup", "mussadiq khan", "scrupulous", "technology"],
+  creator: "Mussadiq khan"
 };
 
 export default function RootLayout({
@@ -21,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <body
         className={`${instrumentSerif.className} antialiased`}
       >
