@@ -36,7 +36,7 @@ const Home = () => {
     <main className="bg-primary grid gap-4 grid-rows-4 md:grid-cols-2 lg:grid-cols-3 text-contact p-2 xl:px-10">
       <motion.div variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 1}} initial="hidden" animate="show" className="bg-secondary rounded-xl lg:col-span-3 md:col-span-2 font-bold text-[52px] text-center">Scrupulous</motion.div>
 
-      <motion.div  variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 1.5}} initial="hidden" animate="show" className=" scale-x-105 overflow-hidden h-[300px] row-span-6 rounded-xl">
+      <motion.div  variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 1.5}} initial="hidden" animate="show" className=" md:scale-x-105 overflow-hidden h-[300px] row-span-6 rounded-xl">
         <Projects />
       </motion.div>
 
@@ -63,7 +63,7 @@ const Home = () => {
       </motion.div>
 
 
-      <motion.div  variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 3.5}} initial="hidden" animate="show" className="bg-secondary p-3  md:h-full md:row-span-10 lg:row-span-9 row-span-20 h-full rounded-xl">
+      <motion.div  variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 3.5}} initial="hidden" animate="show" className="bg-secondary p-3  md:h-full max-w-[730px] min-w-[100px] md:row-span-10 row-span-9 col-span-1 h-full rounded-xl">
         <PricingSlider /> 
       </motion.div>
       

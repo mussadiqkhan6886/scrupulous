@@ -8,7 +8,7 @@ import { FaCheck } from "react-icons/fa";
 
 export default function PricingSlider() {
   return (
-    <div className="w-full max-w-2xl mx-auto text-text">
+    <div className="text-text">
       <Swiper
         modules={[Autoplay, Pagination]}
         spaceBetween={30}
