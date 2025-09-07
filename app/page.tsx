@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { FiArrowUpRight } from "react-icons/fi";
 import {SocialIcon} from "react-social-icons"
 import { FaUser } from "react-icons/fa";
+import PricingSlider from '@/components/Prices';
 
 
 const imageVariant = {
@@ -55,8 +56,11 @@ const Home = () => {
       </div>
 
 
-      <div className="bg-secondary p-3  md:h-full md:row-span-10 lg:row-span-9 row-span-20 h-[500px] rounded-xl">4</div>
-      <div className="bg-secondary p-3  w-full text-[21px]  h-[300px] row-span-5 rounded">
+      <div className="bg-secondary p-3  md:h-full md:row-span-10 lg:row-span-9 row-span-20 h-[500px] rounded-xl">
+        <PricingSlider /> 
+      </div>
+      
+      <div className="bg-secondary p-3  w-full text-[18px]  h-[300px] row-span-5 rounded">
         <p>At Scrupulous, we believe in turning ideas into impactful digital experiences. As a freelancing agency, we specialize in web development, design, and creative digital solutions — built with precision, passion, and integrity. Our goal is simple: deliver work that not only looks good but also works seamlessly, helping you grow with confidence.</p>  
       </div>
       
