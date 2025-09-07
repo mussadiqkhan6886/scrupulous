@@ -13,27 +13,34 @@ import PricingSlider from '@/components/Prices';
 
 const imageVariant = {
   hidden: {
-    scale: 130,
-    x: 50,
+    scale: 1.6,
     y: 50,
   },
   show: {
-    scale: 100,
-    x: 0,
+    scale: 1,
     y: 0
   }
 }
 
+const vairantDiv = {
+  hidden: {
+    opacity: 0
+  },
+  show: {
+    opacity: 1,
+  },
+}
+
 const Home = () => {
   return (
-    <main className="bg-primary grid gap-4 grid-rows-4 md:grid-cols-2 lg:grid-cols-3 text-contact p-2 lg:px-10">
-      <div className="bg-secondary p-3  rounded-xl lg:col-span-3 md:col-span-2 font-bold text-5xl text-center">Scrupulous</div>
+    <main className="bg-primary grid gap-4 grid-rows-4 md:grid-cols-2 lg:grid-cols-3 text-contact p-2 xl:px-10">
+      <motion.div variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 1}} initial="hidden" animate="show" className="bg-secondary rounded-xl lg:col-span-3 md:col-span-2 font-bold text-[52px] text-center">Scrupulous</motion.div>
 
-      <div className=" scale-x-105 overflow-hidden h-[300px] row-span-6 rounded-xl">
+      <motion.div  variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 1.5}} initial="hidden" animate="show" className=" scale-x-105 overflow-hidden h-[300px] row-span-6 rounded-xl">
         <Projects />
-      </div>
+      </motion.div>
 
-      <div className="bg-secondary p-3 w-full h-[300px] row-span-6 rounded-xl relative overflow-hidden flex items-center justify-center">
+      <motion.div variants={imageVariant} initial="hidden" animate="show" transition={{ease:"backInOut", duration: 2}} className="bg-secondary p-3 w-full h-[300px] row-span-6 rounded-xl relative overflow-hidden flex items-center justify-center">
         {/* Background text */}
         <h2 className="text-[95px] font-extralight absolute inset-0 flex  justify-center text-center">
           Mussadiq
@@ -53,24 +60,26 @@ const Home = () => {
         <p className="text-base absolute -right-2 bottom-10 -rotate-90">
           Man behind it
         </p>
-      </div>
+      </motion.div>
 
 
-      <div className="bg-secondary p-3  md:h-full md:row-span-10 lg:row-span-9 row-span-20 h-[500px] rounded-xl">
+      <motion.div  variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 3.5}} initial="hidden" animate="show" className="bg-secondary p-3  md:h-full md:row-span-10 lg:row-span-9 row-span-20 h-full rounded-xl">
         <PricingSlider /> 
-      </div>
+      </motion.div>
       
-      <div className="bg-secondary p-3  w-full text-[18px]  h-[300px] row-span-5 rounded">
+      <motion.div  variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 2.25}} initial="hidden" animate="show" className="bg-secondary p-3  w-full text-[18px]  h-[300px] row-span-5 rounded-xl">
         <p>At Scrupulous, we believe in turning ideas into impactful digital experiences. As a freelancing agency, we specialize in web development, design, and creative digital solutions — built with precision, passion, and integrity. Our goal is simple: deliver work that not only looks good but also works seamlessly, helping you grow with confidence.</p>  
-      </div>
+      </motion.div>
       
-      <Link target='_blank' href={"https://mussadiqkhan.vercel.app/hire-me"} className="bg-contact text-secondary  p-3  relative  h-[300px] row-span-5 rounded-xl hover:bg-text duration-500 ease-in-out">
-        <FiArrowUpRight className='text-4xl absolute right-3 top-3'/>
-        <h2 className='text-[60px] font-extralight absolute bottom-3 italic'>Contact me</h2>
-      </Link>
+      <motion.div className="bg-contact text-secondary  p-3  relative  h-[300px] row-span-5 rounded-xl hover:bg-text duration-500 ease-in-out" variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 3}} initial="hidden" animate="show">
+        <Link target='_blank' className='w-full h-full' href={"https://mussadiqkhan.vercel.app/hire-me"} >
+          <FiArrowUpRight className='text-4xl absolute right-3 top-3'/>
+          <h2 className='text-[60px] font-extralight absolute bottom-3 italic'>Contact me</h2>
+        </Link>
+      </motion.div>
       
 
-      <div className="bg-secondary p-3  flex justify-evenly items-center  row-span-2 w-full rounded-xl">
+      <motion.div  variants={vairantDiv} transition={{duration: 1, ease: "backInOut", delay: 4}} initial="hidden" animate="show" className="bg-secondary p-3  flex justify-evenly items-center  row-span-2 w-full rounded-xl">
         <SocialIcon label='github icon' network='github' bgColor='transparent' url='https://github.com/mussadiqkhan6886' />
         <SocialIcon label='instagram icon' network='instagram' bgColor='transparent' url='https://www.instagram.com/the__scrupulous/?__pwa=1' />
         <SocialIcon label='linkedin icon' network='linkedin' bgColor='transparent' url='https://www.linkedin.com/in/mussadiq-khan-2815aa34a/' />
@@ -78,7 +87,7 @@ const Home = () => {
         <Link href='https://mussadiqkhan.vercel.app'>
           <FaUser className='text-xl' />
         </Link>
-      </div>
+      </motion.div>
     </main>
   )
 }
