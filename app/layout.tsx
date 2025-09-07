@@ -27,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" />
+        <meta name="google-site-verification" content="3o7TyGVcbl7HdUTElJVPYv05mzt8Ubwu9N0oQenA0F4" />
       </head>
       <body
         className={`${instrumentSerif.className} antialiased`}
