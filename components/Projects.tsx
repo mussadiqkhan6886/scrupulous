@@ -49,7 +49,7 @@ const CARDS = [
   { id: 16, img: "/d17.png" },
   { id: 17, img: "/d18.png" },
   { id: 18, img: "/d19.png" },
-  { id: 19, img: "/zayPic.png" },
+  { id: 19, img: "/zaypPic.png" },
   { id: 20, img: "/cryPic.png" },
   { id: 21, img: "/adminPic.png" },
   { id: 22, img: "/promptPic.png" },
