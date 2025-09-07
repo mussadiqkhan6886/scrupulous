@@ -3,6 +3,7 @@
 @theme{
   --color-primary: #7D8D86;
   --color-secondary: #3E3F29;
-  --color-text: #F1F0E4;
+  --color-text: #e3cfb3;
   --color-contact: #BCA88D;
+  --breakpoint-xs: 370px
 }

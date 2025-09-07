@@ -54,7 +54,7 @@ export const CardStack = ({
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
-            <Image className="w-full h-full rounded" src={card.img} alt="image" width={500} height={500} />
+            <Image className="w-full h-full rounded-xl" src={card.img} alt="image" width={500} height={500} />
           </motion.div>
         );
       })}
