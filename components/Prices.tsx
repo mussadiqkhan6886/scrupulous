@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FaCheck } from "react-icons/fa";
@@ -10,12 +10,11 @@ export default function PricingSlider() {
   return (
     <div className="text-text">
       <Swiper
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
-        pagination={{ clickable: true }}
       >
         {/* Basic */}
         <SwiperSlide>
