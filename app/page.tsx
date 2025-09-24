@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <main className="bg-primary grid gap-4 grid-rows-4 md:grid-cols-2 lg:grid-cols-3 text-text p-2 xl:px-10">
       <motion.div variants={width ? vairantDiv : {}} transition={{duration: 1, ease: "backInOut", delay: 1}} initial="hidden" animate="show" className="bg-secondary rounded-xl lg:col-span-3 md:col-span-2 font-bold text-[52px] text-center">
-        <h1>Scrupulous</h1>
+        <h1 aria-label='heading of the page scrupulous'>Scrupulous</h1>
       </motion.div>
 
       <motion.div  variants={width ? vairantDiv : {}} transition={{duration: 1, ease: "backInOut", delay: 1.5}} initial="hidden" animate="show" className=" md:scale-x-105 overflow-hidden h-[300px] row-span-6 rounded-xl">
@@ -81,7 +81,7 @@ const Home = () => {
       <motion.div className="bg-contact text-secondary  p-3  relative  h-[300px] row-span-5 rounded-xl hover:bg-text duration-500 ease-in-out" variants={width ? vairantDiv : {}} transition={{duration: 1, ease: "backInOut", delay: 3}} initial="hidden" animate="show">
         <Link target='_blank' className='w-full h-full' href={"https://mussadiqkhan.vercel.app/hire-me"} >
           <FiArrowUpRight className='text-4xl absolute right-3 top-3'/>
-          <h2 className='text-[60px] font-extralight absolute bottom-3 italic'>Contact me</h2>
+          <h3 aria-label='contact me' className='text-[60px] font-extralight absolute bottom-3 italic'>Contact me</h3>
         </Link>
       </motion.div>
       
