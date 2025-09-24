@@ -1,0 +1,6 @@
+# robots.txt for Scrupulous
+
+User-agent: *
+# Allow all crawlers to index site
+
+Allow: /
