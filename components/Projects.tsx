@@ -59,5 +59,7 @@ const CARDS = [
   { id: 26, img: "/d24.png" },
   { id: 27, img: "/d25.png" },
   { id: 28, img: "/d26.png" },
-  { id: 29, img: "/d27.png" }
+  { id: 29, img: "/d27.png" },
+  { id: 31, img: "/d29.png"},
+  { id: 30, img: "/d30.png"},
 ];
