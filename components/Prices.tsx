@@ -8,7 +8,7 @@ import { FaCheck } from "react-icons/fa";
 
 export default function PricingSlider() {
   return (
-    <div className="text-text">
+    <section className="text-text">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={30}
@@ -18,7 +18,7 @@ export default function PricingSlider() {
       >
         {/* Basic */}
         <SwiperSlide>
-          <div className="p-3 px-5">
+          <section className="p-3 px-5">
             <div className="mb-3">
                 <h2 aria-label="essential plan" className="text-4xl font-bold">Essential</h2>
                 <p className="text-contact text-base">Basic Plan</p>
@@ -26,7 +26,7 @@ export default function PricingSlider() {
             <div className="mb-7">
                 <div className="flex items-end">
                     <span className="text-end text-lg text-contact">PKR</span>
-                    <h2 aria-label="essential price 5999" className="text-4xl font-bold mx-1">5999</h2>
+                    <h3 aria-label="essential price 5999" className="text-4xl font-bold mx-1">5999</h3>
                 </div>
                 <p className="mt-2 text-[17px]">For startups taking their first step online.</p>
             </div>
@@ -41,12 +41,12 @@ export default function PricingSlider() {
                     <p className="flex items-center gap-5"><FaCheck className="text-text text-[17px]" /> <span>Contact Form</span></p>
                 </div>
             </div>
-          </div>
+          </section>
         </SwiperSlide>
 
       
         <SwiperSlide>
-          <div className="p-3 px-5">
+          <section className="p-3 px-5">
             <div className="mb-3">
                 <h2 aria-label="professional planning price" className="text-4xl font-bold">Professional</h2>
                 <p className="text-contact text-base">Business Plan</p>
@@ -54,7 +54,7 @@ export default function PricingSlider() {
             <div className="mb-5">
                 <div className="flex items-end">
                     <span className="text-end text-lg text-contact">PKR</span>
-                    <h2 aria-label="professional price 29999" className="text-4xl font-bold mx-1">29999</h2>
+                    <h3 aria-label="professional price 29999" className="text-4xl font-bold mx-1">29999</h3>
                 </div>
                 <p className="mt-2 text-[17px]">For growing companies needing a stronger digital presence.</p>
             </div>
@@ -70,12 +70,12 @@ export default function PricingSlider() {
                     <p className="flex items-center gap-5"><FaCheck className="text-text text-[17px]" /> <span>Functional</span></p>
                 </div>
             </div>
-          </div>
+          </section>
         </SwiperSlide>
 
        
      <SwiperSlide>
-          <div className="p-0 px-5">
+          <section className="p-0 px-5">
             <div className="mb-2">
                 <h2 aria-label="premium pricing plan" className="text-4xl font-bold">Premium</h2>
                 <p className="text-contact text-base">Enterprise Plan</p>
@@ -83,7 +83,7 @@ export default function PricingSlider() {
             <div className="mb-3">
                 <div className="flex items-end">
                     <span className="text-end text-lg text-contact">PKR</span>
-                    <h2 aria-label="premium planning price 79999" className="text-4xl font-bold mx-1">79999</h2>
+                    <h3 aria-label="premium planning price 79999" className="text-4xl font-bold mx-1">79999</h3>
                 </div>
                 <p className="mt-2 text-[17px]">For established businesses seeking a fully custom solution.</p>
             </div>
@@ -101,9 +101,9 @@ export default function PricingSlider() {
                     <p className="flex items-center gap-5"><FaCheck className="text-text text-[17px]" /> <span>Animation smooth scroll</span></p>
                 </div>
             </div>
-          </div>
+          </section>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 }
