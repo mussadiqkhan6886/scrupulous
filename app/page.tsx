@@ -62,6 +62,7 @@ const Home = () => {
           width={400}
           height={400}
           priority={true}
+          fetchPriority="high"
         />
 
         {/* Side text */}
@@ -92,8 +93,8 @@ const Home = () => {
         <SocialIcon label='instagram icon' network='instagram' bgColor='transparent' url='https://www.instagram.com/the__scrupulous/?__pwa=1' />
         <SocialIcon label='linkedin icon' network='linkedin' bgColor='transparent' url='https://www.linkedin.com/in/mussadiq-khan-2815aa34a/' />
         <SocialIcon label='whatsapp icon' network='whatsapp' bgColor='transparent' url='https://wa.me/+923189328584' />
-        <Link href='https://mussadiqkhan.vercel.app'>
-          <FaUser className='text-xl' />
+        <Link aria-label='user profile' href='https://mussadiqkhan.vercel.app'>
+          <FaUser aria-label='user profile icon' className='text-xl' />
         </Link>
       </motion.div>
     </main>

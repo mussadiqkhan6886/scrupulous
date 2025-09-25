@@ -12,11 +12,36 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   title: "Scrupulous",
   applicationName: "scrupulous freelancing",
-  description: "Scrupulous is freelancing agency giving service of web development, graphics designing and SEO optimization, our motto is to make client happy and be their trustworthy",
-  authors: [{name: "Mussadiq khan", url: "https://mussadiqkhan.vercel.app"}],
-  keywords: ["Web development", "freelancing", "graphics designing", "startup", "mussadiq khan", "scrupulous", "technology", "Scrupulous", "ecommerce", "web developer", "ui/ux"],
-  creator: "Mussadiq khan"
+  description:
+    "Scrupulous is freelancing agency giving service of web development, graphics designing and SEO optimization, our motto is to make client happy and be their trustworthy",
+  authors: [{ name: "Mussadiq khan", url: "https://mussadiqkhan.vercel.app" }],
+  keywords: [
+    "Web development",
+    "freelancing",
+    "graphics designing",
+    "startup",
+    "mussadiq khan",
+    "scrupulous",
+    "technology",
+    "Scrupulous",
+    "ecommerce",
+    "web developer",
+    "ui/ux",
+  ],
+  creator: "Mussadiq khan",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
+  },
 };
+
 
 export default function RootLayout({
   children,
