@@ -1,15 +1,16 @@
 'use client';
 
+export const dynamic = "force-static" // Home stays static
 import React from 'react'
 import {motion}  from "framer-motion"
 import Image from 'next/image'
-import { Projects } from '@/components/Projects';
 import Link from 'next/link';
 import { FiArrowUpRight } from "react-icons/fi";
 import {SocialIcon} from "react-social-icons"
 import { FaUser } from "react-icons/fa";
 import PricingSlider from '@/components/Prices';
 import useWindowWidth from '@/hook/windowHook';
+import { Projects } from '@/components/Projects';
 
 
 const imageVariant = {
