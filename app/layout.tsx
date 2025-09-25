@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// @ts-ignore
+// @ts-expect-error
 import "./globals.css";
 
 import { Instrument_Serif } from 'next/font/google';
