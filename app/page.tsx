@@ -99,12 +99,5 @@ const Home = () => {
   )
 }
 
-export async function getStaticProps() {
-  return {
-    props: {},
-    revalidate: false
-  }
-} 
-
 export default Home
 
